@@ -1,0 +1,11 @@
+# List all files in long format, including dot files
+alias ls="ls -lha"
+
+# Verbose rm output
+alias rm="rm -v"
+
+# Make less output stay on screen
+alias less="less -X"
+
+# List index list of pushd dirs
+alias dirs="dirs -v"

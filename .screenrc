@@ -1,0 +1,11 @@
+# Make nice status bar with screen info
+caption always "%{wk}%H %{yk}%c %{rk}%d %M %Y %{bk}%l %{gk}%w"
+
+# No startup message
+startup_message off
+
+# Set a very long scrollback buffer
+defscrollback 50000
+
+# Run screen in UTF-8 mode
+defutf8 on
