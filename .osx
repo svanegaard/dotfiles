@@ -53,6 +53,15 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock wvous-br-corner -int 4
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+# Move screenshot location to
+SDIR="$HOME/Pictures/Screenshots/"
+if [ ! -d "$SDIR" ]
+then
+    mkdir $SDIR
+	defaults write com.apple.screencapture location ~/Pictures/Screenshots/
+	killall SystemUIServer
+fi
+
 # Kill affected applications
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" > /dev/null 2>&1; done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
