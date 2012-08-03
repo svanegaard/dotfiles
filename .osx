@@ -58,8 +58,7 @@ SDIR="$HOME/Pictures/Screenshots/"
 if [ ! -d "$SDIR" ]
 then
     mkdir $SDIR
-	defaults write com.apple.screencapture location ~/Pictures/Screenshots/
-	killall SystemUIServer
+	defaults write com.apple.screencapture location $DIR
 fi
 
 # Kill affected applications
