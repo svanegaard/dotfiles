@@ -28,6 +28,9 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Show all filename extensions in Finder
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+# Show all files in Finder
+defaults write com.apple.finder AppleShowAllFiles -bool YES
+
 # Show status bar in Finder
 defaults write com.apple.finder ShowStatusBar -bool true
 

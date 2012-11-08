@@ -1,3 +1,5 @@
+# Add this to config by running: git config --global core.excludesfile ~/.gitignore_global
+
 # Compiled source #
 ###################
 *.com
