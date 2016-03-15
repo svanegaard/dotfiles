@@ -27,6 +27,7 @@ RPROMPT="[%T]"
 HISTSIZE=5000
 HISTFILE=${HOME}/.zsh_history
 SAVEHIST=5000
+setopt HIST_IGNORE_SPACE
 
 # No CR to screw output
 setopt nopromptcr
